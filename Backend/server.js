@@ -17,6 +17,10 @@ connectDB();
 
 const app = express();
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "OK" });
+});
+
 // Middleware
 app.use(cors({
   origin: [
