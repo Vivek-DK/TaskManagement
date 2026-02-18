@@ -17,7 +17,7 @@ connectDB();
 
 const app = express();
 
-app.get("/health", (req, res) => {
+app.use("/health", (req, res) => {
   res.status(200).json({ status: "OK" });
 });
 
