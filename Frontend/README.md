@@ -41,70 +41,74 @@ The system is designed with scalability and maintainability in mind.
 
 ## 📂 Project Structure
 
-# 🚀 Scalable Task Management Web App
-
-A full-stack web application built with **React + Node.js + Express + MongoDB** implementing secure authentication, protected routes, and full CRUD functionality with search & filter UI.
-
----
-
-## 📌 Project Overview
-
-This project is a scalable task management dashboard featuring:
-
-- 🔐 JWT-based Authentication (Register / Login / Logout)
-- 🛡 Protected Routes
-- 📦 Full CRUD Operations on Tasks (Sample Entity)
-- 🔎 Search and Filter UI
-- 🎨 Modern UI with TailwindCSS + Framer Motion
-- 🔑 Password Hashing with bcrypt
-- ⚙ Clean Modular Backend Architecture
-
-The system is designed with scalability and maintainability in mind.
-
----
-
-## 🏗 Tech Stack
-
-### Frontend
-- React.js
-- TailwindCSS
-- Framer Motion
-- Axios
-- React Context API
-- React Router DOM
-
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT Authentication
-- bcrypt for password hashing
-
----
-
-## 📂 Project Structure
+### Backend (Node.js + Express + MongoDB)
+```
+backend/
+│
+├── config/
+│   └── db.js                
+│
+├── controllers/
+│   ├── authController.js    
+│   └── taskController.js    
+│
+├── middleware/
+│   ├── authMiddleware.js    
+│   └── errorMiddleware.js   
+│
+├── models/
+│   ├── User.js              
+│   └── Task.js              
+│
+├── routes/
+│   ├── authRoutes.js        
+│   └── taskRoutes.js        
+│
+├── utils/
+│   └── generateToken.js     
+│
+├── .env                     
+├── server.js                
+└── package.json             
 
 ```
-TaskManagement
-│
-├── client/ # Frontend (React)
-│ ├── src/
-│ │ ├── pages/
-│ │ ├── components/
-│ │ ├── context/
-│ │ ├── api/
-│ │ └── routes/
-│
-├── server/ # Backend (Node/Express)
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── utils/
-│
-└── README.md
 
-``` 
+### Frontend (React + Vite + Tailwind CSS)
+
+```
+frontend/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── api/
+│   │   └── axios.js          
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── TaskForm.jsx
+│   │   └── TaskList.jsx
+│   │
+│   ├── context/
+│   │   └── AuthContext.jsx   
+│   │
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   └── Dashboard.jsx
+│   │
+│   ├── routes/
+│   │   └── ProtectedRoute.jsx  
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env                     
+└── package.json             
+
+```
 
 ---
 
@@ -136,6 +140,7 @@ TaskManagement
                 │  User + Task Data  │
                 └────────────────────┘
 ```
+
 ### Flow Explanation
 
 1. User interacts with React frontend  
@@ -271,7 +276,7 @@ A Postman collection is included for API testing.
    ```
 3. Set environment variable:
    ```
-   base_url = http://localhost:5000/api
+   base_url = http://localhost:5000/api || https://your-backend-url/api
    ```
 4. Test:
    - Register
@@ -322,15 +327,14 @@ npm run dev
 ### Create .env file inside Backend/
 
 ```
-VITE_API_BASE_URL=your_backend_deployment_URL
+VITE_API_BASE_URL= 'https://your-backend-url/api'
 ```
 
 ### Frontend runs on:
-http://localhost:5173
+https://task-management-vivek.vercel.app/
 
 ### Backend runs on:
-http://localhost:5000
-
+https://taskmanagement-cgzz.onrender.com
 
 ---
 
