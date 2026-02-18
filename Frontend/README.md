@@ -245,24 +245,6 @@ VITE_API_BASE_URL=https://your-backend-url/api
 ```
 --- 
 
-## 📸 Screenshots
-
-> Add screenshots inside a `/screenshots` folder in your repo.
-
-### Landing Page
-![Landing](./screenshots/landing.png)
-
-### Login Page
-![Login](./screenshots/login.png)
-
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
-
-### Task CRUD
-![Tasks](./screenshots/tasks.png)
-
----
-
 ## 📬 API Postman Collection
 
 A Postman collection is included for API testing.
