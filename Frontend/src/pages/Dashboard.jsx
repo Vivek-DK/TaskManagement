@@ -82,10 +82,8 @@ const Dashboard = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-screen bg-[#0b0f19] text-gray-200"
-    >
-
-      {/* Ambient background */}
+      className="min-h-screen bg-[#0b0f19] text-gray-200 overflow-x-hidden"
+    > 
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-[-120px] left-[-120px] w-[400px] h-[400px] bg-indigo-500/20 blur-[120px]" />
         <div className="absolute bottom-[-120px] right-[-120px] w-[400px] h-[400px] bg-purple-500/20 blur-[120px]" />
