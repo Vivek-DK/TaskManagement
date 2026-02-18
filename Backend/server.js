@@ -21,7 +21,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://task-management-vivek.vercel.app/'
+    'https://task-management-vivek.vercel.app'
   ],
   allowedHeaders: ['content-Type', 'authorization'],
   methods:['POST', 'GET', 'PUT', 'DELETE'],
