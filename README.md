@@ -371,4 +371,5 @@ This project was built as part of a Frontend Developer Internship assessment to 
 ## 👨‍💻 Author
 
 Vivek D K
+
 Frontend Developer
