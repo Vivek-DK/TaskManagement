@@ -370,5 +370,5 @@ This project was built as part of a Frontend Developer Internship assessment to 
 
 ## 👨‍💻 Author
 
-Your Name  
+Vivek D K
 Frontend Developer
